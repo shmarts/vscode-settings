@@ -1,25 +1,17 @@
 {
   "eslint.options": { "extensions": [".js", ".vue"] },
   "emmet.syntaxProfiles": { "javascript": "css" },
-  "files.exclude": { "**/.git": true, "**/.svn": true, "**/.hg": true, "**/CVS": true, "**/.DS_Store": true, ".nuxt/": true, "node_modules/": true, "build/": true, "design_files/": true },
+  "files.exclude": { "**/.git": true, "**/.svn": true, "**/.hg": true, "**/CVS": true, "**/.DS_Store": true, ".nuxt/": true, "node_modules/": true, "build/": true, "design_files/": true, "**/*.log": true, "**/*.log*": true, "**/dist": true, },
   "window.restoreWindows": "all",
   "workbench.iconTheme": "vs-minimal",
   "window.titleBarStyle": "custom",
 
-  "eslint.validate": [
-    "javascript", {
-      "language": "vue",
-      "autoFix": true
-    }
-  ],
-  
   // Text size / fonts
   "window.zoomLevel": -0.75,
   "editor.fontFamily": "Fira Code, Fira Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 13,
-  "editor.tabSize": 2,
 
   // Line numbers / gutter / left
   "editor.glyphMargin": false,
@@ -31,7 +23,7 @@
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.occurrencesHighlight": false,
-  
+
   "workbench.colorTheme": "Spacegray Ocean Dark",
   "workbench.colorCustomizations": {
     "foreground": "#65737E",
@@ -45,7 +37,7 @@
     "editorGutter.modifiedBackground": "#976b4f",
     "editorGutter.deletedBackground": "#9c4e53",
     "editorIndentGuide.background": "#3d4550",
-    
+
     // Ruler / minimap / right
     "editorOverviewRuler.addedForeground": "#ff00",
     "editorOverviewRuler.modifiedForeground": "#ff00",
@@ -60,7 +52,7 @@
     // "activityBar.background": "#232830",
     // "activityBar.border": "#1c1f26",
     "editorOverviewRuler.border": "#ff00",
-    
+
     // Panel
     "panel.border": "#232830",
     // "sideBar.border": "#1c1f26"
@@ -83,5 +75,47 @@
       { "scope": "support.function", "settings": { "foreground": "#8abeb7" } },
       { "scope": "support.class.builtin", "settings": { "foreground": "#EBCB8B" } }
     ]
-  }
+  },
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "guides.stack.color.dark": "rgba(61, 69, 80, 1)",
+  "editor.renderIndentGuides": false,
+  "guides.normal.color.dark": "rgba(61, 69, 80, 1)",
+  "guides.active.hideOnSelection": false,
+  "guides.active.enabled": false,
+
+  // Spacing
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // Event triggers
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onSave",
+
+  // HTML
+  "html.format.enable": false,
+  "html.suggest.angular1": false,
+  "html.suggest.ionic": false,
+  "vetur.validation.template": false,
+
+  // JS(ON)
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "javascript.format.enable": false,
+  "json.format.enable": false,
+  "vetur.validation.script": false,
+
+  // CSS
+  "stylelint.enable": true,
+  "stylelint.additionalDocumentSelectors": ["vue"],
+  "css.validate": false,
+  "scss.validate": false,
+  "vetur.validation.style": false
 }
