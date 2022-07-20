@@ -1,61 +1,30 @@
 {
-  "eslint.options": { "extensions": [".js", ".vue"] },
-  "emmet.syntaxProfiles": { "javascript": "css" },
-  "files.exclude": { "**/.git": true, "**/.svn": true, "**/.hg": true, "**/CVS": true, "**/.DS_Store": true, ".nuxt/": true, "node_modules/": true, "build/": true, "design_files/": true, "**/*.log": true, "**/*.log*": true, "**/dist": true, },
-  "window.restoreWindows": "all",
-  "workbench.iconTheme": "vs-minimal",
-  "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Spacegray Ocean Dark",
 
-  // Text size / fonts
-  "window.zoomLevel": -0.75,
   "editor.fontFamily": "Fira Code, Fira Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 13,
 
-  // Line numbers / gutter / left
-  "editor.glyphMargin": false,
-  "editor.showFoldingControls": "mouseover",
-  "editor.renderLineHighlight": "gutter",
-
-  // Ruler / minimap / right
-  "editor.minimap.enabled": false,
-  "editor.overviewRulerBorder": false,
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.occurrencesHighlight": false,
-
-  "workbench.colorTheme": "Spacegray Ocean Dark",
   "workbench.colorCustomizations": {
-    "foreground": "#65737E",
-
-    // editorGroup border
-    "editorGroup.border": "#232830",
-
-    // Line numbers / gutter / left
+    "foreground": "#798791",
     "editorLineNumber.foreground": "#878b8e",
     "editorGutter.addedBackground": "#65a27f",
     "editorGutter.modifiedBackground": "#976b4f",
     "editorGutter.deletedBackground": "#9c4e53",
     "editorIndentGuide.background": "#3d4550",
-
-    // Ruler / minimap / right
     "editorOverviewRuler.addedForeground": "#ff00",
     "editorOverviewRuler.modifiedForeground": "#ff00",
     "editorOverviewRuler.deletedForeground": "#ff00",
     "scrollbar.shadow": "#ff00",
     "editorOverviewRuler.selectionHighlightForeground": "#ff00",
-    "scrollbarSlider.background":"#9aa0",
+    "scrollbarSlider.background": "#9aa0",
     "scrollbarSlider.activeBackground": "#f000",
     "scrollbarSlider.hoverBackground": "#ff00",
     "editorOverviewRuler.errorForeground": "#ff00",
-
-    // "activityBar.background": "#232830",
-    // "activityBar.border": "#1c1f26",
     "editorOverviewRuler.border": "#ff00",
-
-    // Panel
-    "panel.border": "#232830",
-    // "sideBar.border": "#1c1f26"
+    "panel.border": "#232830"
   },
   "editor.tokenColorCustomizations": {
     "functions": "#81a2be",
@@ -65,57 +34,42 @@
     "numbers": "#de935f",
     "variables": "#e66464",
     "textMateRules": [
-      { "scope": "entity.name.tag", "settings": { "foreground": "#e66464", "fontStyle": "underline" } },
-      { "scope": "support.type", "settings": { "foreground": "#afcf96"} },
-      { "scope": "entity.other.attribute-name", "settings": { "foreground": "#de935f" } },
-      { "scope": "entity.other.attribute-name.id", "settings": { "foreground": "#81a2be" } },
-      { "scope": "support.type.property-name.css", "settings": { "foreground": "#c5c8c6" } },
-      { "scope": "support.constant.property-value.css", "settings": { "foreground": "#de935f" } },
-      { "scope": "constant.language.boolean", "settings": { "foreground": "#de935f" } },
+      {
+        "scope": "entity.name.tag",
+        "settings": { "foreground": "#e66464", "fontStyle": "underline" }
+      },
+      { "scope": "support.type", "settings": { "foreground": "#afcf96" } },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": { "foreground": "#de935f" }
+      },
+      {
+        "scope": "entity.other.attribute-name.id",
+        "settings": { "foreground": "#81a2be" }
+      },
+      {
+        "scope": "support.type.property-name.css",
+        "settings": { "foreground": "#c5c8c6" }
+      },
+      {
+        "scope": "support.constant.property-value.css",
+        "settings": { "foreground": "#de935f" }
+      },
+      {
+        "scope": "constant.language.boolean",
+        "settings": { "foreground": "#de935f" }
+      },
       { "scope": "support.function", "settings": { "foreground": "#8abeb7" } },
-      { "scope": "support.class.builtin", "settings": { "foreground": "#EBCB8B" } }
+      {
+        "scope": "support.class.builtin",
+        "settings": { "foreground": "#EBCB8B" }
+      }
     ]
   },
-  "files.associations": {
-    "*.vue": "vue"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "guides.stack.color.dark": "rgba(61, 69, 80, 1)",
-  "editor.renderIndentGuides": false,
-  "guides.normal.color.dark": "rgba(61, 69, 80, 1)",
-  "guides.active.hideOnSelection": false,
-  "guides.active.enabled": false,
 
-  // Spacing
-  "editor.insertSpaces": true,
-  "editor.tabSize": 2,
-  "editor.trimAutoWhitespace": true,
-  "files.trimTrailingWhitespace": true,
-  "files.eol": "\n",
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-
-  // Event triggers
-  "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.run": "onSave",
-
-  // HTML
-  "html.format.enable": false,
-  "html.suggest.angular1": false,
-  "html.suggest.ionic": false,
-  "vetur.validation.template": false,
-
-  // JS(ON)
-  "eslint.validate": ["javascript", "javascriptreact", "vue"],
-  "javascript.format.enable": false,
-  "json.format.enable": false,
-  "vetur.validation.script": false,
-
-  // CSS
-  "stylelint.enable": true,
-  "stylelint.additionalDocumentSelectors": ["vue"],
-  "css.validate": false,
-  "scss.validate": false,
-  "vetur.validation.style": false
+  "files.exclude": {
+    "**/build/": true,
+    "**/dist/": true,
+    "**/node_modules/": true
+  }
 }
